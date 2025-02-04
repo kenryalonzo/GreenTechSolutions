@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Tech Solutions</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./assets/js/home.js" defer></script>
+    <script src="/assets/js/home.js" defer></script>
 </head>
 <body>
     <header class="w-full fixed top-0 left-0 bg-white/60 backdrop-blur-md shadow-md py-4 z-50">
@@ -51,79 +51,69 @@
       </div>  
 
     <main>
-        <section class="relative w-full h-screen overflow-hidden">
-            <!-- Carousel container -->
-            <div class="swiper mySwiper w-full h-full overflow-hidden">
-                <div class="swiper-wrapper">
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide flex justify-center items-center w-full h-full">
-                        <img src="/assets/images/c1.png" class="absolute w-full h-full object-cover" alt="Hero Image 1">
-                        <div class="absolute inset-0 bg-black/40"></div>
-                        <div class="absolute inset-0 flex flex-col justify-center items-start text-white px-10 md:px-20">
-                            <h1 class="text-5xl md:text-6xl font-bold">Solar Systems Marketplace</h1>
-                            <p class="text-lg md:text-xl mt-4">Practical renewable energy technology that reduces costs and helps the environment.</p>
-                            <a href="#" class="mt-6 bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-500 transition">Request a Quote</a>
+        <!-- Hero Section -->
+
+        <section class="h-screen w-screen overflow-hidden relative bg-no-repeat">
+            <div class="carousel">
+                <div class="list">
+                    <div class="item" style="background-image: url(/assets/images/c3.png);">
+                        <div class="content">
+                            <div class="title">SLIDER</div>
+                            <div class="name">EAGLE</div>
+                            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.</div>
+                            <div class="btn">
+                                <button>See More</button>
+                                <button>Subscribe</button>
+                            </div>
                         </div>
                     </div>
-        
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide flex justify-center items-center w-full h-full">
-                        <img src="/assets/images/c2.png" class="absolute w-full h-full object-cover" alt="Hero Image 2">
-                        <div class="absolute inset-0 bg-black/40"></div>
+                    <div class="item" style="background-image: url(/assets/images/c2.png);">
+                        <div class="content">
+                            <div class="title">SLIDER</div>
+                            <div class="name">OWL</div>
+                            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.</div>
+                            <div class="btn">
+                                <button>See More</button>
+                                <button>Subscribe</button>
+                            </div>
+                        </div>
                     </div>
-        
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide flex justify-center items-center w-full h-full">
-                        <img src="/assets/images/c3.png" class="absolute w-full h-full object-cover" alt="Hero Image 3">
-                        <div class="absolute inset-0 bg-black/40"></div>
+                    <div class="item" style="background-image: url(/assets/images/c1.png);">
+                        <div class="content">
+                            <div class="title">SLIDER</div>
+                            <div class="name">CROW</div>
+                            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.</div>
+                            <div class="btn">
+                                <button>See More</button>
+                                <button>Subscribe</button>
+                            </div>
+                        </div>
                     </div>
-        
-                    <!-- Slide 4 -->
-                    <div class="swiper-slide flex justify-center items-center w-full h-full">
-                        <img src="/assets/images/c4.png" class="absolute w-full h-full object-cover" alt="Hero Image 4">
-                        <div class="absolute inset-0 bg-black/40"></div>
+                    <div class="item" style="background-image: url(/assets/images/c4.png);">
+                        <div class="content">
+                            <div class="title">SLIDER</div>
+                            <div class="name">BUTTERFLY</div>
+                            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.</div>
+                            <div class="btn">
+                                <button>See More</button>
+                                <button>Subscribe</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
         
-            <!-- Navigation buttons -->
-            <div class="absolute bottom-10 right-10 flex space-x-4 z-50">
-                <button class="swiper-button-prev w-12 h-12 bg-white rounded-full flex justify-center items-center shadow-lg hover:bg-gray-200">
-                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                    </svg>
-                </button>
-                <button class="swiper-button-next w-12 h-12 bg-green-600 rounded-full flex justify-center items-center shadow-lg hover:bg-green-500">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                </button>
+                <div class="arrows">
+                    <button class="prev"><</button>
+                    <button class="next">></button>
+                </div>
+        
+                <div class="timeRunning"></div>
             </div>
         </section>
-
+        
         <!-- apercu -->
 
-        <section class="w-full py-16">
-            <div class="container mx-auto px-6"> 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
-                    <div class="bg-[#0A9642] pt-6 p-4 rounded-lg shadow-md transition transform hover:scale-105">
-                        <img src="/assets/images/icon.png" alt="Installation domestique" class="mx-auto h-24 animate-balance">
-                        <div class="text-center text-white">
-                            <h3 class="text-xl font-semibold mb-2">Installation domestique</h3>
-                            <p>Panneaux solaires, stockage de batteries, récupération de chaleur,<br>systèmes de ventilation et recharge de véhicules électriques.</p>
-                        </div>
-                    </div>
-                    <div class="bg-[#1E56A1] pt-6 p-4 rounded-lg shadow-md transition transform hover:scale-105">
-                        <img src="/assets/images/icon2.png" alt="Installation commerciale" class="mx-auto h-24 animate-balance">
-                        <div class="text-center text-white">
-                            <h3 class="text-xl font-semibold mb-2">Installation commerciale</h3>
-                            <p>Panneaux solaires, stockage de batteries, récupération de chaleur,<br>systèmes de ventilation et recharge de véhicules électriques.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        
         <!-- Achievements -->
 
         <section class="w-full py-16 bg-gray-100">
