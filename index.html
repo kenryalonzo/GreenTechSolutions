@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Tech Solutions</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/home.js" defer></script>
+</head>
+<body>
+    <header class="w-full fixed top-0 left-0 bg-white/60 backdrop-blur-md shadow-md py-4 z-50">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center">
+            
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="/assets/images/logo_sn.png" alt="GreenTech Logo" class="h-8 pl-5">
+            </div>
+  
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="text-green-900 font-medium hover:text-gray-500">Home</a>
+                <a href="/assets/html/about.html" class="text-gray-500 hover:text-green-900">About</a>
+                <a href="/assets/html/services.html" class="text-gray-500 hover:text-green-900">Services</a>
+                <a href="/assets/html/contact.html" class="text-gray-500 hover:text-green-900">Contact</a>
+            </nav>
+  
+            <!-- Buttons -->
+            <div class="hidden md:flex space-x-4 pr-8">
+                <button class="bg-gray-100 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-200">Sign In</button>
+                <button class="bg-green-800 text-white px-4 py-2 rounded-md hover:bg-green-700">Get Started</button>
+            </div>
+  
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+      </header>
+  
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden fixed top-16 left-0 w-full bg-white/60 backdrop-blur-md shadow-md py-4 flex flex-col items-center space-y-4 transition-all z-50">
+        <a href="#" class="text-green-900 font-medium hover:text-gray-500">Home</a>
+        <a href="/assets/html/about.html" class="text-gray-500 hover:text-green-900">About</a>
+        <a href="/assets/html/services.html" class="text-gray-500 hover:text-green-900">Services</a>
+        <a href="/assets/html/contact.html" class="text-gray-500 hover:text-green-900">Contact</a>
+        <button class="bg-gray-100 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-200">Sign In</button>
+        <button class="bg-green-800 text-white px-4 py-2 rounded-md hover:bg-green-700">Get Started</button>
+      </div>  
+
+    <main>
+        <section class="relative w-full h-screen overflow-hidden">
+            <!-- Carousel container -->
+            <div class="swiper mySwiper w-full h-full overflow-hidden">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide flex justify-center items-center w-full h-full">
+                        <img src="/assets/images/c1.png" class="absolute w-full h-full object-cover" alt="Hero Image 1">
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <div class="absolute inset-0 flex flex-col justify-center items-start text-white px-10 md:px-20">
+                            <h1 class="text-5xl md:text-6xl font-bold">Solar Systems Marketplace</h1>
+                            <p class="text-lg md:text-xl mt-4">Practical renewable energy technology that reduces costs and helps the environment.</p>
+                            <a href="#" class="mt-6 bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-500 transition">Request a Quote</a>
+                        </div>
+                    </div>
+        
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide flex justify-center items-center w-full h-full">
+                        <img src="/assets/images/c2.png" class="absolute w-full h-full object-cover" alt="Hero Image 2">
+                        <div class="absolute inset-0 bg-black/40"></div>
+                    </div>
+        
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide flex justify-center items-center w-full h-full">
+                        <img src="/assets/images/c3.png" class="absolute w-full h-full object-cover" alt="Hero Image 3">
+                        <div class="absolute inset-0 bg-black/40"></div>
+                    </div>
+        
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide flex justify-center items-center w-full h-full">
+                        <img src="/assets/images/c4.png" class="absolute w-full h-full object-cover" alt="Hero Image 4">
+                        <div class="absolute inset-0 bg-black/40"></div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Navigation buttons -->
+            <div class="absolute bottom-10 right-10 flex space-x-4 z-50">
+                <button class="swiper-button-prev w-12 h-12 bg-white rounded-full flex justify-center items-center shadow-lg hover:bg-gray-200">
+                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                <button class="swiper-button-next w-12 h-12 bg-green-600 rounded-full flex justify-center items-center shadow-lg hover:bg-green-500">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- apercu -->
+
+        <section class="w-full py-16">
+            <div class="container mx-auto px-6"> 
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+                    <div class="bg-[#0A9642] pt-6 p-4 rounded-lg shadow-md transition transform hover:scale-105">
+                        <img src="/assets/images/icon.png" alt="Installation domestique" class="mx-auto h-24 animate-balance">
+                        <div class="text-center text-white">
+                            <h3 class="text-xl font-semibold mb-2">Installation domestique</h3>
+                            <p>Panneaux solaires, stockage de batteries, récupération de chaleur,<br>systèmes de ventilation et recharge de véhicules électriques.</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#1E56A1] pt-6 p-4 rounded-lg shadow-md transition transform hover:scale-105">
+                        <img src="/assets/images/icon2.png" alt="Installation commerciale" class="mx-auto h-24 animate-balance">
+                        <div class="text-center text-white">
+                            <h3 class="text-xl font-semibold mb-2">Installation commerciale</h3>
+                            <p>Panneaux solaires, stockage de batteries, récupération de chaleur,<br>systèmes de ventilation et recharge de véhicules électriques.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements -->
+
+        <section class="w-full py-16 bg-gray-100">
+            <div class="max-w-6xl mx-auto text-center">
+                <h2 class="text-xl font-semibold text-green-900 mb-8">Our Achievements</h2>
+            </div>
+        
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 max-w-6xl mx-auto">
+                <div class="relative group bg-cover bg-center rounded-xl overflow-hidden min-h-[150px] md:min-h-[200px]" style="background-image: url('/assets/images/a1.png');">
+                    <div class="absolute inset-0 bg-black/50 transition-opacity group-hover:bg-black/70"></div>
+                    <div class="absolute top-4 left-4 bg-green-600 text-white p-2 rounded-full">
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                    <div class="absolute bottom-6 left-6 text-white">
+                        <h3 class="text-lg font-bold">Battery Storage</h3>
+                    </div>
+                </div>
+        
+                <div class="relative group bg-cover bg-center rounded-xl overflow-hidden row-span-1 md:row-span-2 col-span-1 md:col-span-2 min-h-[250px] md:min-h-[350px]" style="background-image: url('/assets/images/a4.png');">
+                    <div class="absolute inset-0 bg-black/50 transition-opacity group-hover:bg-black/70"></div>
+                    <div class="absolute top-4 left-4 bg-green-600 text-white p-2 rounded-full">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="absolute bottom-6 left-6 text-white">
+                        <h3 class="text-lg font-bold">Renewable Energy</h3>
+                        <p class="text-sm">Protecting Our Environment Needn't Cost The Earth.</p>
+                        <button class="mt-3 px-4 py-2 bg-yellow-400 text-gray-900 font-semibold rounded-full transition-transform transform group-hover:scale-105">Discover More</button>
+                    </div>
+                </div>
+        
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+                    <div class="relative group bg-cover bg-center rounded-xl overflow-hidden min-h-[140px] md:min-h-[200px]" style="background-image: url('/assets/images/a2.png');">
+                        <div class="absolute inset-0 bg-black/50 transition-opacity group-hover:bg-black/70"></div>
+                        <div class="absolute top-4 left-4 bg-green-600 text-white p-2 rounded-full">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-md font-bold">Inverter</h3>
+                        </div>
+                    </div>
+        
+                    <div class="relative group bg-cover bg-center rounded-xl overflow-hidden min-h-[140px] md:min-h-[200px]" style="background-image: url('/assets/images/a3.png');">
+                        <div class="absolute inset-0 bg-black/50 transition-opacity group-hover:bg-black/70"></div>
+                        <div class="absolute top-4 left-4 bg-green-600 text-white p-2 rounded-full">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-md font-bold">Wind Kinetic</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+       
+        <!-- temoignages clients -->
+
+        <section class="w-full bg-gray-100 py-16">
+            <div class="max-w-5xl mx-auto text-center">
+                <h2 class="text-4xl font-bold text-gray-900">Our Clients Speak</h2>
+                <p class="text-gray-500 mt-2">We have been working with clients around the world</p>
+            </div>
+        
+            <!-- Swiper Container -->
+            <div class="swiper mySwiper mt-10">
+                <div class="swiper-wrapper">
+        
+                    <!-- Testimonial 1 -->
+                    <div class="swiper-slide flex flex-col items-center">
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center relative">
+                            <p class="text-lg font-semibold">Efficient Collaborating</p>
+                            <p class="text-gray-500 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.</p>
+                            <div class="absolute -bottom-6 left-1/2 transform -translate-x-1/2">
+                                <img src="https://randomuser.me/api/portraits/men/50.jpg" class="w-12 h-12 rounded-full border-4 border-white shadow-md" alt="John Wick">
+                            </div>
+                        </div>
+                        <p class="mt-8 font-bold text-gray-900">John Wick</p>
+                        <p class="text-sm text-gray-500">CEO at ABC Corporation</p>
+                    </div>
+        
+                    <!-- Testimonial 2 -->
+                    <div class="swiper-slide flex flex-col items-center">
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center relative">
+                            <p class="text-lg font-semibold">Intuitive Design</p>
+                            <p class="text-gray-500 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.</p>
+                            <div class="absolute -bottom-6 left-1/2 transform -translate-x-1/2">
+                                <img src="https://randomuser.me/api/portraits/women/50.jpg" class="w-12 h-12 rounded-full border-4 border-white shadow-md" alt="Pola Kenfack">
+                            </div>
+                        </div>
+                        <p class="mt-8 font-bold text-gray-900">Pola Kenfack</p>
+                        <p class="text-sm text-gray-500">CEO at ABC Corporation</p>
+                    </div>
+        
+                    <!-- Testimonial 3 -->
+                    <div class="swiper-slide flex flex-col items-center">
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center relative">
+                            <p class="text-lg font-semibold">Mindblowing Service</p>
+                            <p class="text-gray-500 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.</p>
+                            <div class="absolute -bottom-6 left-1/2 transform -translate-x-1/2">
+                                <img src="https://randomuser.me/api/portraits/men/51.jpg" class="w-12 h-12 rounded-full border-4 border-white shadow-md" alt="Andru Kamdem">
+                            </div>
+                        </div>
+                        <p class="mt-8 font-bold text-gray-900">Andru Kamdem</p>
+                        <p class="text-sm text-gray-500">CEO at ABC Corporation</p>
+                    </div>
+        
+                </div>
+        
+                <!-- Pagination (les trois petits points) -->
+                <div class="swiper-pagination mt-6"></div>
+            </div>
+        </section>
+        
+        
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

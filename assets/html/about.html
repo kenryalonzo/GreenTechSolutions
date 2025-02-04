@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="shortcut icon" href="../images/logo_sn.png" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/about.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/about.js" defer></script>
+</head>
+<body>
+    <header class="w-full fixed top-0 left-0 bg-white/60 backdrop-blur-md shadow-md py-4 z-50">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center">
+            
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="/assets/images/logo_sn.png" alt="GreenTech Logo" class="h-8 pl-5">
+            </div>
+  
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="/index.html" class="text-gray-500 hover:text-gray-900">Home</a>
+                <a href="#" class="text-green-900 font-medium hover:text-gray-500">About</a>
+                <a href="../html/services.html" class="text-gray-500 hover:text-green-900">Services</a>
+                <a href="../html/contact.html" class="text-gray-500 hover:text-green-900">Contact</a>
+            </nav>
+  
+            <!-- Buttons -->
+            <div class="hidden md:flex space-x-4 pr-8">
+                <button class="bg-gray-100 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-200">Sign In</button>
+                <button class="bg-green-800 text-white px-4 py-2 rounded-md hover:bg-green-700">Get Started</button>
+            </div>
+  
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+      </header>
+  
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden fixed top-16 left-0 w-full bg-white/60 backdrop-blur-md shadow-md py-4 flex flex-col items-center space-y-4 transition-all z-50">
+        <a href="/index.html" class="text-gray-500 hover:text-gray-900">Home</a>
+        <a href="#" class="text-green-900 font-medium hover:text-gray-500">About</a>
+        <a href="../html/services.html" class="text-gray-500 hover:text-green-900">Services</a>
+        <a href="../html/contact.html" class="text-gray-500 hover:text-green-900">Contact</a>
+          <button class="bg-gray-100 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-200">Sign In</button>
+          <button class="bg-green-800 text-white px-4 py-2 rounded-md hover:bg-green-700">Get Started</button>
+      </div>  
+
+    <main>
+        <section class="bg-gray-100 py-32 px-6 md:px-12">
+            <div class="max-w-6xl mx-auto">
+              <h2 class="text-3xl font-semibold text-center text-green-900 mb-8">À Propos de Nous</h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          
+                <div>
+                  <h3 class="text-2xl font-semibold text-green-900 mb-4">Notre Vision</h3>
+                  <p class="text-gray-600 mb-6">Inspirer et rendre le travail épanouissant.</p>
+                  <p class="text-gray-600 mb-6">
+                    HRLink est un système RH basé sur le cloud conçu pour simplifier et rationaliser les processus RH.
+                    Grove HR est un outil puissant qui peut aider les PME à gérer leurs opérations RH avec facilité.
+                  </p>
+                  <p class="text-gray-600 mb-6">
+                    HRLink a été créé en 2009 en tant que société de développement de logiciels et de conseil basée aux États-Unis avec des centres de développement au Vietnam.
+                  </p>
+                  <p class="text-gray-600 mb-6">
+                    En plus de fournir des services d'externalisation, HRLink a construit et lancé avec succès ses propres sociétés de logiciels.
+                    Les entreprises les plus remarquables avec des millions d'utilisateurs dans le monde.
+                  </p>
+                  <p class="text-gray-600 mb-6">
+                    HRLink est fiable, sécurisé et soutenu par une équipe d'experts en RH avec une expérience avérée dans le développement de solutions technologiques de haute qualité.
+                  </p>
+                </div>
+          
+                <div class="text-center">
+                  <img src="/assets/images/m1.png" alt="Fondateurs" class="w-full h-auto rounded-lg shadow-lg transform transition duration-500 ease-in-out hover:scale-105">
+                  <div class="mt-6">
+                    <p class="text-lg font-medium text-gray-800">Darrell Steward</p>
+                    <p class="text-gray-600">Co-Fondateur</p>
+                  </div>
+                  <div class="mt-4">
+                    <p class="text-lg font-medium text-gray-800">Ronald Richards</p>
+                    <p class="text-gray-600">Fondateur</p>
+                  </div>
+                </div>
+          
+              </div>
+            </div>
+        </section>
+
+        <!-- section chiffrée -->
+
+        <section class="bg-gray-100 py-32 px-6 md:px-12">
+            <div class="max-w-6xl mx-auto">
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="counter-container">
+                  <h3 class="text-2xl font-semibold text-center text-green-900 mb-4">Membres de l'équipe</h3>
+                  <span class="counter text-4xl font-bold text-center text-gray-800" data-target="30">0</span>+
+                </div>
+                <div class="counter-container">
+                  <h3 class="text-2xl font-semibold text-center text-green-900 mb-4">Fonctionnalités</h3>
+                  <span class="counter text-4xl font-bold text-center text-gray-800" data-target="100">0</span>+
+                </div>
+                <div class="counter-container">
+                  <h3 class="text-2xl font-semibold text-center text-green-900 mb-4">Entreprises</h3>
+                  <span class="counter text-4xl font-bold text-center text-gray-800" data-target="5000">0</span>+
+                </div>
+              </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>
