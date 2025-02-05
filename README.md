@@ -24,6 +24,7 @@ Le site web vise à informer les visiteurs sur les avantages de l'énergie verte
 *   CSS (Tailwind CSS)
 *   JavaScript
 *   Gsap
+*   Swiper
 
 ## Installation
 
