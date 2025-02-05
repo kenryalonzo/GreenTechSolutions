@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Tech Solutions</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/assets/js/home.js" defer></script>
 </head>
@@ -56,47 +59,47 @@
         <section class="h-screen w-screen overflow-hidden relative bg-no-repeat">
             <div class="carousel">
                 <div class="list">
-                    <div class="item" style="background-image: url(/assets/images/c3.png);">
+                    <div class="item" style="background-image: url(/assets/images/c4.png);">
                         <div class="content">
                             <div class="title">SLIDER</div>
                             <div class="name">EAGLE</div>
                             <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.</div>
                             <div class="btn">
                                 <button>See More</button>
-                                <button>Subscribe</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item" style="background-image: url(/assets/images/c2.png);">
-                        <div class="content">
-                            <div class="title">SLIDER</div>
-                            <div class="name">OWL</div>
-                            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.</div>
-                            <div class="btn">
-                                <button>See More</button>
-                                <button>Subscribe</button>
+                                <button>Join</button>
                             </div>
                         </div>
                     </div>
                     <div class="item" style="background-image: url(/assets/images/c1.png);">
                         <div class="content">
                             <div class="title">SLIDER</div>
+                            <div class="name">OWL</div>
+                            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.</div>
+                            <div class="btn">
+                                <button>See More</button>
+                                <button>Join</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/assets/images/c2.png);">
+                        <div class="content">
+                            <div class="title">SLIDER</div>
                             <div class="name">CROW</div>
                             <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.</div>
                             <div class="btn">
                                 <button>See More</button>
-                                <button>Subscribe</button>
+                                <button>Join</button>
                             </div>
                         </div>
                     </div>
-                    <div class="item" style="background-image: url(/assets/images/c4.png);">
+                    <div class="item" style="background-image: url(/assets/images/c3.png);">
                         <div class="content">
                             <div class="title">SLIDER</div>
                             <div class="name">BUTTERFLY</div>
                             <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.</div>
                             <div class="btn">
                                 <button>See More</button>
-                                <button>Subscribe</button>
+                                <button>Join</button>
                             </div>
                         </div>
                     </div>
@@ -113,6 +116,33 @@
         
         <!-- apercu -->
 
+        <section class="bg-gray-200 py-10">
+            <h2 class="text-center text-lg text-green-700 font-semibold mb-6">Aperçu</h2>
+            <div class="flex flex-col md:flex-row justify-center gap-6 max-w-4xl mx-auto px-4">
+                
+                <!-- Carte 1 : Domestic Installation -->
+                <div class="bg-green-600 text-white rounded-lg p-6 flex-1 text-center shadow-lg">
+                    <img src="./assets/images/icon.png" alt="Domestic Icon" class="w-16 mx-auto mb-4">
+                    <h3 class="text-xl font-bold">Domestic Installation</h3>
+                    <p class="text-sm mt-2">
+                        Solar PV, Battery Storage, Heat Recovery <br>
+                        Ventilation Systems & EV Charging
+                    </p>
+                </div>
+        
+                <!-- Carte 2 : Commercial Installation -->
+                <div class="bg-blue-700 text-white rounded-lg p-6 flex-1 text-center shadow-lg">
+                    <img src="./assets/images/icon2.png" alt="Commercial Icon" class="w-16 mx-auto mb-4">
+                    <h3 class="text-xl font-bold">Commercial Installation</h3>
+                    <p class="text-sm mt-2">
+                        Solar PV, Battery Storage, Heat Recovery <br>
+                        Ventilation Systems & EV Charging
+                    </p>
+                </div>
+        
+            </div>
+        </section>
+        
         
         <!-- Achievements -->
 
@@ -170,63 +200,70 @@
        
         <!-- temoignages clients -->
 
-        <section class="w-full bg-gray-100 py-16">
-            <div class="max-w-5xl mx-auto text-center">
-                <h2 class="text-4xl font-bold text-gray-900">Our Clients Speak</h2>
-                <p class="text-gray-500 mt-2">We have been working with clients around the world</p>
-            </div>
-        
-            <!-- Swiper Container -->
-            <div class="swiper mySwiper mt-10">
-                <div class="swiper-wrapper">
-        
-                    <!-- Testimonial 1 -->
-                    <div class="swiper-slide flex flex-col items-center">
-                        <div class="bg-white p-6 rounded-lg shadow-md text-center relative">
-                            <p class="text-lg font-semibold">Efficient Collaborating</p>
-                            <p class="text-gray-500 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.</p>
-                            <div class="absolute -bottom-6 left-1/2 transform -translate-x-1/2">
-                                <img src="https://randomuser.me/api/portraits/men/50.jpg" class="w-12 h-12 rounded-full border-4 border-white shadow-md" alt="John Wick">
-                            </div>
+        <section class="w-full flex justify-center bg-[#030728] flex justify-center items-center min-h-screen">
+            <div class="container swiper">
+                <div class="slider-wrapper overflow-hidden max-w-[1200px] mx-auto my-14">
+                    <div class="card-list swiper-wrapper">
+                        
+                        <!-- Avis clients -->
+                        <div class="card-item swiper-slide">
+                            <img src="/assets/images/t1.png" alt="Teddy Williams" class="user-image">
+                            <h2 class="user-name font-bold">Teddy Williams</h2>
+                            <p class="testimonial">“Un service exceptionnel, je recommande vivement !”</p>
                         </div>
-                        <p class="mt-8 font-bold text-gray-900">John Wick</p>
-                        <p class="text-sm text-gray-500">CEO at ABC Corporation</p>
-                    </div>
-        
-                    <!-- Testimonial 2 -->
-                    <div class="swiper-slide flex flex-col items-center">
-                        <div class="bg-white p-6 rounded-lg shadow-md text-center relative">
-                            <p class="text-lg font-semibold">Intuitive Design</p>
-                            <p class="text-gray-500 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.</p>
-                            <div class="absolute -bottom-6 left-1/2 transform -translate-x-1/2">
-                                <img src="https://randomuser.me/api/portraits/women/50.jpg" class="w-12 h-12 rounded-full border-4 border-white shadow-md" alt="Pola Kenfack">
-                            </div>
+    
+                        <div class="card-item swiper-slide">
+                            <img src="/assets/images/t2.png" alt="Anderson Federic" class="user-image">
+                            <h2 class="user-name font-bold">Anderson Federic</h2>
+                            <p class="testimonial">“L'équipe est très professionnelle et à l'écoute.”</p>
                         </div>
-                        <p class="mt-8 font-bold text-gray-900">Pola Kenfack</p>
-                        <p class="text-sm text-gray-500">CEO at ABC Corporation</p>
-                    </div>
-        
-                    <!-- Testimonial 3 -->
-                    <div class="swiper-slide flex flex-col items-center">
-                        <div class="bg-white p-6 rounded-lg shadow-md text-center relative">
-                            <p class="text-lg font-semibold">Mindblowing Service</p>
-                            <p class="text-gray-500 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.</p>
-                            <div class="absolute -bottom-6 left-1/2 transform -translate-x-1/2">
-                                <img src="https://randomuser.me/api/portraits/men/51.jpg" class="w-12 h-12 rounded-full border-4 border-white shadow-md" alt="Andru Kamdem">
-                            </div>
+    
+                        <div class="card-item swiper-slide">
+                            <img src="/assets/images/t3.png" alt="Emilia O'ok" class="user-image">
+                            <h2 class="user-name font-bold">Emilia O'ok</h2>
+                            <p class="testimonial">“Une expérience utilisateur incroyable, merci !”</p>
                         </div>
-                        <p class="mt-8 font-bold text-gray-900">Andru Kamdem</p>
-                        <p class="text-sm text-gray-500">CEO at ABC Corporation</p>
+    
+                        <div class="card-item swiper-slide">
+                            <img src="/assets/images/t4.png" alt="Jims Kamdem" class="user-image">
+                            <h2 class="user-name font-bold">Jims Kamdem</h2>
+                            <p class="testimonial">“J'adore leur professionnalisme et leur réactivité.”</p>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                          <img src="/assets/images/t5.png" alt="Emily Davis" class="user-image">
+                          <h2 class="user-name font-bold">Emily Davis</h2>
+                          <p class="testimonial">“Une équipe formidable, toujours à l'écoute.”</p>
+                        </div>
+                        
+                        <div class="card-item swiper-slide">
+                          <img src="/assets/images/t6.png" alt="Christopher King" class="user-image">
+                          <h2 class="user-name font-bold">Christopher King</h2>
+                          <p class="testimonial">“Un service client au top, je suis très satisfait.”</p>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                          <img src="/assets/images/t7.png" alt="Lea Folefack" class="user-image">
+                          <h2 class="user-name font-bold">Lea Folefack</h2>
+                          <p class="testimonial">“Je recommande sans hésitation, excellent travail.”</p>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                          <img src="/assets/images/t8.png" alt="Daniel Vikings" class="user-image">
+                          <h2 class="user-name font-bold">Daniel Vikings</h2>
+                          <p class="testimonial">“Superbe expérience, merci pour votre professionnalisme.”</p>
+                        </div>
+                        
                     </div>
-        
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Boutons Navigation -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
-        
-                <!-- Pagination (les trois petits points) -->
-                <div class="swiper-pagination mt-6"></div>
             </div>
         </section>
-        
-        
+     
     </main>
 
     <footer>

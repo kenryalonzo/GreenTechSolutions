@@ -6,6 +6,9 @@
     <title>about</title>
     <link rel="shortcut icon" href="../images/logo_sn.png" type="image/svg+xml">
     <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="../js/about.js" defer></script>
 </head>
@@ -52,7 +55,7 @@
       </div>  
 
     <main>
-        <section class="bg-gray-100 py-32 px-6 md:px-12">
+        <section class="bg-gray-100 py-32 px-6 md:px-8">
             <div class="max-w-6xl mx-auto">
               <h2 class="text-3xl font-semibold text-center text-green-900 mb-8">À Propos de Nous</h2>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -82,36 +85,187 @@
                     <p class="text-lg font-medium text-gray-800">Darrell Steward</p>
                     <p class="text-gray-600">Co-Fondateur</p>
                   </div>
-                  <div class="mt-4">
-                    <p class="text-lg font-medium text-gray-800">Ronald Richards</p>
-                    <p class="text-gray-600">Fondateur</p>
-                  </div>
-                </div>
-          
               </div>
             </div>
         </section>
 
         <!-- section chiffrée -->
 
-        <section class="bg-gray-100 py-32 px-6 md:px-12">
-            <div class="max-w-6xl mx-auto">
-              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                <div class="counter-container">
-                  <h3 class="text-2xl font-semibold text-center text-green-900 mb-4">Membres de l'équipe</h3>
-                  <span class="counter text-4xl font-bold text-center text-gray-800" data-target="30">0</span>+
-                </div>
-                <div class="counter-container">
-                  <h3 class="text-2xl font-semibold text-center text-green-900 mb-4">Fonctionnalités</h3>
-                  <span class="counter text-4xl font-bold text-center text-gray-800" data-target="100">0</span>+
-                </div>
-                <div class="counter-container">
-                  <h3 class="text-2xl font-semibold text-center text-green-900 mb-4">Entreprises</h3>
-                  <span class="counter text-4xl font-bold text-center text-gray-800" data-target="5000">0</span>+
-                </div>
+        <section class="bg-gray-900 text-white rounded-lg p-8 flex justify-around max-w-4xl mx-auto mb-16">
+          <div class="text-center">
+              <h2 class="text-3xl font-semibold counter" data-target="30">0</h2>
+              <p class="text-gray-300">Team members</p>
+          </div>
+          <div class="text-center">
+              <h2 class="text-3xl font-semibold counter" data-target="100">0</h2>
+              <p class="text-gray-300">Features</p>
+          </div>
+          <div class="text-center">
+              <h2 class="text-3xl font-semibold counter" data-target="5000">0</h2>
+              <p class="text-gray-300">Companies</p>
+          </div>
+        </section>      
+        
+        <!-- Our Team -->
+         
+        <section class="team-section">
+          <h2>Our Team</h2>
+          <div class="grid-container">
+              <div class="grid-item">
+                  <div class="profile-card">
+                      <div class="img">
+                          <img src="/assets/images/t1.png" alt="profile">
+                      </div>
+                      <div class="caption">
+                          <h3>Cheril Cooper</h3>
+                          <p>Full Stack Developer</p>
+                          <div class="social-links">
+                              <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                              <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                              <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                  </div>
               </div>
-            </div>
-        </section>
+              <div class="grid-item">
+                  <div class="profile-card">
+                      <div class="img">
+                          <img src="/assets/images/t2.png" alt="profile">
+                      </div>
+                      <div class="caption">
+                          <h3>John Doe</h3>
+                          <p>Web Designer</p>
+                          <div class="social-links">
+                              <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                              <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                              <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="grid-item">
+                  <div class="profile-card">
+                      <div class="img">
+                          <img src="/assets/images/t3.png" alt="profile">
+                      </div>
+                      <div class="caption">
+                          <h3>Jane Smith</h3>
+                          <p>UI/UX Designer</p>
+                          <div class="social-links">
+                              <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                              <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                              <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="grid-item">
+                  <div class="profile-card">
+                      <div class="img">
+                          <img src="/assets/images/t4.png" alt="profile">
+                      </div>
+                      <div class="caption">
+                          <h3>Peter Jones</h3>
+                          <p>Front-end Developer</p>
+                          <div class="social-links">
+                              <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                              <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                              <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="grid-item">
+                  <div class="profile-card">
+                      <div class="img">
+                          <img src="/assets/images/t5.png" alt="profile">
+                      </div>
+                      <div class="caption">
+                          <h3>Alice Johnson</h3>
+                          <p>Back-end Developer</p>
+                          <div class="social-links">
+                              <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                              <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                              <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="grid-item">
+                  <div class="profile-card">
+                      <div class="img">
+                          <img src="/assets/images/t6.png" alt="profile">
+                      </div>
+                      <div class="caption">
+                          <h3>Bob Williams</h3>
+                          <p>Data Scientist</p>
+                          <div class="social-links">
+                              <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                              <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                              <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="grid-item">
+                  <div class="profile-card">
+                      <div class="img">
+                          <img src="/assets/images/t7.png" alt="profile">
+                      </div>
+                      <div class="caption">
+                          <h3>Eva Brown</h3>
+                          <p>Software Engineer</p>
+                          <div class="social-links">
+                              <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                              <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                              <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="grid-item">
+                  <div class="profile-card">
+                      <div class="img">
+                          <img src="/assets/images/t8.png" alt="profile">
+                      </div>
+                      <div class="caption">
+                          <h3>Michael Davis</h3>
+                          <p>IT Manager</p>
+                          <div class="social-links">
+                              <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                              <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                              <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="grid-item">
+                  <div class="profile-card">
+                      <div class="img">
+                          <img src="/assets/images/t9.png" alt="profile">
+                      </div>
+                      <div class="caption">
+                          <h3>Sophia Wilson</h3>
+                          <p>Project Manager</p>
+                          <div class="social-links">
+                              <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                              <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                              <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- join us  -->
+        
+      <section class="bg-gray-900 text-white rounded-lg p-8 flex flex-col items-center text-center max-w-4xl mx-auto mb-16">
+        <h2 class="text-2xl font-semibold">Join our team</h2>
+        <p class="text-gray-300 mt-2">Interested in applying for a position? View our Careers page for open positions and apply.</p>
+        <a href="#" class="mt-4 px-6 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition">View open positions</a>
+      </section>
+    
 
     </main>
 
