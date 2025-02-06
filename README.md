@@ -35,6 +35,11 @@ Le site web vise à informer les visiteurs sur les avantages de l'énergie verte
 
 Les contributions sont les bienvenues ! N'hésitez pas à soumettre des Pull Requests pour améliorer le code, ajouter des fonctionnalités ou corriger des bugs.
 
+## Maquette
+
+![Vue en 3D de mon site](/assets/images/Final-view.png)
+
+
 ## Auteur
 
 NATHANAEL FOTIE FOTIE
