@@ -9,20 +9,9 @@
     font-family: 'poppins', sans-serif, 'Helvetica';
 }
 
-@keyframes balance {
-    0% { transform: rotate(-5deg); }
-    50% { transform: rotate(5deg); }
-    100% { transform: rotate(-5deg); }
-}
-
-.animate-balance {
-    animation: balance 2s infinite;
-}
-
-
 /* carousel for the hero section*/
 
-carousel{
+.carousel{
     width: 100vw;
     height: 100vh;
     overflow: hidden;
